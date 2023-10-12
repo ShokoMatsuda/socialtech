@@ -7,6 +7,13 @@ p {
     font-size: 15px;
 }
 
+.arrow-right {
+    color: #2710d5;
+}
+#submit {
+    margin-top: 50px;
+}
+
 /*==========
 PC用のスタイル
 ==========*/
@@ -15,7 +22,7 @@ PC用のスタイル
     /* 横幅設定 */
     body {
         max-width: 1080px;
-        min-width: 960px;
+        min-width: 900px;
         margin: 0 auto 0 auto;
     }
 
@@ -79,7 +86,7 @@ PC用のスタイル
     }
     #main-visual > img {
         max-width: 620px;
-        border-radius: 476px 0 0 ;
+        border-radius: 476px 0 0 0;
         position: absolute;
         top: 0;
         right: 0;
@@ -222,7 +229,6 @@ PC用のスタイル
 
     /* 3つの組織文化の表 */
     .culture-table {
-        max-width: 500px;
         margin-right: 50px;
     }
 
@@ -287,7 +293,7 @@ PC用のスタイル
         top: 0;
         left: 0;
         z-index: 31;
-        margin-right: 20;
+        margin-right: 20px;
     }
 
     .vision-box > span > h4 {
@@ -394,6 +400,7 @@ PC用のスタイル
     border-right: 0;
     border-bottom-width: 1px;
     border-bottom-style: solid;
+    border-bottom-color: #707070;
     background-color: #fafafa;
     width: 400px;
     height: 56px;
@@ -405,7 +412,6 @@ PC用のスタイル
     border-right: 0;
     border-bottom-width: 1px;
     border-bottom-color: #707070;
-    border-bottom-style: solid;
     background-color: #fafafa;
     width: 400px;
     height: 200px;
@@ -531,6 +537,7 @@ footer {
     color: #2710d5;
     font-size: 48px;
     margin: 0;
+    font-weight: bold;
 }
 .fivegoals-h3 {
     font-size: 28px;
@@ -912,7 +919,7 @@ footer {
             padding: 20px;
             border-bottom-color: #2710d5;
             border-bottom-width: 1px;
-            border-block-end-style: solid;
+            border-bottom-style: solid;
             width: 50px;
         }
         .cell {
@@ -967,7 +974,7 @@ footer {
         }
 
         .contact-textbox {
-            height: 50px;
+            height: 56px;
             border-top: 0;
             border-left: 0;
             border-right: 0;
@@ -1124,6 +1131,70 @@ footer {
             top: 180px;
             left: 20px;
             font-size: 13px;
+        }
+
+        /* プロダクトページ */
+        #product-main {
+            height: 256px;
+            width: 100%;
+            background-image: url(images/product/product-main.png);
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-size: auto 208px;
+        }
+        #product-title {
+            background-color: #2710d5;
+            width: #ffffff;
+            height: 256px;
+            border-radius: 0 248px 248px 0;
+            position: relative;
+        }
+        #product-title > h1 {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            font-size: 40px;
+        }
+        #product-title > span {
+            position: absolute;
+            top: 110px;
+            left: 20px;
+            font-size: 18px;
+        }
+        #produt-title > div {
+            position: absolute;
+            top: 180px;
+            left: 20px;
+            font-size: 13px;
+        }
+        .product-section1 {
+            margin: 20px;
+        }
+        .product-section1 > img {
+            width: 100%;
+            border-radius: 0 300px 0 0;
+        }
+        .product-section2 {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-section2 > img {
+            order: 1;
+            width: 100%;
+            border-radius: 300px 0 0 0;
+        }
+        .product-section2 > div {
+            order: 2;
+        }
+        .product-h2 {
+            color: #2710d5;
+            font-size: 24px;
+            margin: 0;
+        }
+        .product-h3 {
+            font-size: 28px;
+            margin: 0;
         }
 
     }
